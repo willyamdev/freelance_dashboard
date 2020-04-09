@@ -1,0 +1,23 @@
+@import url("pp-container.css");
+@import url("profile-container.css");
+
+$bodyBackground:#EAEEF6;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+}
+
+body{
+    background-color: $bodyBackground;
+}
+
+#content{
+    padding: 25px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+}

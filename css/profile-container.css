@@ -1,0 +1,15 @@
+.profile-container {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.profile-container div {
+  border-radius: 30px;
+  width: 90%;
+  flex-basis: 47%;
+  background-color: white;
+}
+
+/*# sourceMappingURL=profile-container.css.map */
