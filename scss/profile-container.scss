@@ -1,3 +1,6 @@
+$grayColor:#7C8DB6;
+$blueColor:rgb(6, 29, 255);
+
 .profile-container{
     flex-basis: 45%;
     display: flex;
@@ -5,10 +8,109 @@
     justify-content: space-between;
     align-items: flex-end;
 
-    div{
-        border-radius: 30px;
+    .profile-info, .profile-pricing{
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+
+        border-radius: 20px;
         width: 90%;
         flex-basis: 47%;
         background-color: white;
+        display: flex;
+        flex-direction: column;
     }
+
+    .profile-info{
+
+        div:nth-child(1){
+            flex-basis: 50%;
+            position: relative;
+
+            img{
+                object-fit: cover;
+                position: absolute;
+            }
+
+            img:nth-child(1){
+                width: 100%;
+                height: 70%;
+            }
+            
+            img:nth-child(2){
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+                border: 5px solid white;
+            }
+        }
+        
+        div:nth-child(2){
+            padding-top: 10px;
+
+            h3{
+                text-align: center;
+            }
+
+            h4{
+                text-align: center;
+                color: $grayColor;
+            }
+
+            div{
+                border-radius: 30px;
+                white-space: nowrap;
+                width: min-content;
+                padding: 8px 20px;
+                background-color: $blueColor;
+                margin: 0 auto;
+                margin-top: 10px;
+
+                h5{
+                    color: white;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        div:nth-child(3){
+            flex: 1;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            div{
+                margin-top: 0;
+                padding: 0;
+                flex: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h5{
+                    color: $grayColor;
+                    text-align: left;
+                }
+
+                h1{
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    .profile-pricing{
+        padding: 20px;
+
+        p{
+            margin-top: 10px;
+            color: $grayColor;
+        }
+    }
+
 }
