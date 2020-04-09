@@ -1,13 +1,35 @@
+$blueColor:rgb(6, 29, 255);
+
 .pp-container {
     flex-basis: 65%;
     background-color: white;
     border-radius: 30px;
     padding: 30px;
+    // height: min-content;
 
     p {
         margin-top: 20px;
         color: #7C8DB6;
         text-align: justify;
+    }
+
+    input{
+        width: 100%;
+        padding: 15px;
+    }
+
+    button{
+        margin-top: 15px;
+        width: 100%;
+        padding: 20px;
+        color: white;
+        border: none;
+        background-color: $blueColor;
+        cursor: pointer;
+    }
+
+    button:focus{
+        outline: 0;
     }
 }
 
@@ -16,7 +38,7 @@
     margin-top: 20px;
     padding: 10px;
     background-color: rgba(6, 29, 255, 0.1);
-    border: 2px solid rgb(6, 29, 255);
+    border: 2px solid $blueColor;
     border-radius: 5px;
     
     div:nth-child(1) {
@@ -60,5 +82,52 @@
 }
 
 .payment-details-container{
-    margin-top: 40px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+
+    .credit-card{
+        margin-top: 15px;
+        display: flex;
+
+        div:nth-child(1){
+            background-color: #EAEEF6;
+            width: 90px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+
+            img{
+                width: 50%;
+            }
+        }
+
+        div:nth-child(2){
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 15px;
+
+            h5{
+                color: gray;
+            }
+        }
+    }
+
+    button{
+        background: none;
+        width: auto;
+        border: none;
+        padding: 5px;
+        color: $blueColor;
+        margin-top: 10px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    button:focus{
+        outline: 0;
+    }
 }
