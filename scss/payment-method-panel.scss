@@ -1,0 +1,115 @@
+$blueColor:rgb(6, 29, 255);
+
+#payment-panel {
+
+    .shadow {
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 9;
+    }
+
+    .panel {
+        position: absolute;
+        background-color: white;
+        width: 60%;
+        height: 80%;
+        z-index: 10;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        border-radius: 10px;
+        overflow: hidden;
+
+        div:nth-child(1) {
+            display: flex;
+            background-color: $blueColor;
+            width: 100%;
+            padding: 20px;
+
+            h2 {
+                color: white;
+            }
+        }
+
+        div:nth-child(2) {
+            padding: 5px 20px;
+
+            button {
+                display: block;
+                width: 50%;
+                height: 50px;
+                background-color: $blueColor;
+                margin: auto;
+                color: white;
+                border: none;
+                cursor: pointer;
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                right: 0;
+            }
+
+            .card-info-form {
+                margin-top: 30px;
+                display: flex;
+            }
+
+            .card-info-form div:nth-child(2) input[type="text"],
+            .card-info-form div:nth-child(3) input[type="text"],
+            .card-info-form div:nth-child(4) input[type="text"] {
+                width: 50px;
+            }
+
+            .card-info-form div:nth-child(2),
+            .card-info-form div:nth-child(3),
+            .card-info-form div:nth-child(4) {
+                margin-left: 15px;
+            }
+
+            .info-card {
+                display: block;
+                width: auto;
+                padding: 0;
+                margin: 0;
+                background: none;
+
+                p {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        p {
+            margin-top: 30px;
+        }
+
+        select {
+            cursor: pointer;
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid $blueColor;
+        }
+
+        select:focus {
+            outline: 0;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid $blueColor;
+            margin-top: 5px;
+            height: 40px;
+            transition: 0.09s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-bottom: 2px solid $blueColor;
+        }
+    }
+}

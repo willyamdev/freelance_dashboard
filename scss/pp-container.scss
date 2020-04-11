@@ -8,7 +8,7 @@ $blueColor:rgb(6, 29, 255);
     -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
-    // height: min-content;
+    height: min-content;
 
     p {
         margin-top: 20px;
@@ -88,6 +88,10 @@ $blueColor:rgb(6, 29, 255);
 .payment-details-container {
     margin-top: 35px;
     margin-bottom: 20px;
+
+    p{
+        color: black;
+    }
 
     .credit-card {
         margin-top: 15px;

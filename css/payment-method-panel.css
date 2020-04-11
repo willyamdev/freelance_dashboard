@@ -1,0 +1,97 @@
+#payment-panel .shadow {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+}
+#payment-panel .panel {
+  position: absolute;
+  background-color: white;
+  width: 60%;
+  height: 80%;
+  z-index: 10;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#payment-panel .panel div:nth-child(1) {
+  display: flex;
+  background-color: #061dff;
+  width: 100%;
+  padding: 20px;
+}
+#payment-panel .panel div:nth-child(1) h2 {
+  color: white;
+}
+#payment-panel .panel div:nth-child(2) {
+  padding: 5px 20px;
+}
+#payment-panel .panel div:nth-child(2) button {
+  display: block;
+  width: 50%;
+  height: 50px;
+  background-color: #061dff;
+  margin: auto;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+}
+#payment-panel .panel div:nth-child(2) .card-info-form {
+  margin-top: 30px;
+  display: flex;
+}
+#payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(2) input[type=text],
+#payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(3) input[type=text],
+#payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(4) input[type=text] {
+  width: 50px;
+}
+#payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(2),
+#payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(3),
+#payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(4) {
+  margin-left: 15px;
+}
+#payment-panel .panel div:nth-child(2) .info-card {
+  display: block;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+#payment-panel .panel div:nth-child(2) .info-card p {
+  margin-top: 0px;
+}
+#payment-panel .panel p {
+  margin-top: 30px;
+}
+#payment-panel .panel select {
+  cursor: pointer;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #061dff;
+}
+#payment-panel .panel select:focus {
+  outline: 0;
+}
+#payment-panel .panel input[type=text] {
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid #061dff;
+  margin-top: 5px;
+  height: 40px;
+  transition: 0.09s;
+}
+#payment-panel .panel input[type=text]:focus {
+  outline: none;
+  border-bottom: 2px solid #061dff;
+}
+
+/*# sourceMappingURL=payment-method-panel.css.map */

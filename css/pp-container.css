@@ -6,6 +6,7 @@
   -webkit-box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.75);
+  height: min-content;
 }
 .pp-container p {
   margin-top: 20px;
@@ -74,6 +75,9 @@
 .payment-details-container {
   margin-top: 35px;
   margin-bottom: 20px;
+}
+.payment-details-container p {
+  color: black;
 }
 .payment-details-container .credit-card {
   margin-top: 15px;

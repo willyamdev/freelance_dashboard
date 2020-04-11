@@ -1,5 +1,6 @@
 @import url("pp-container.css");
 @import url("profile-container.css");
+@import url("payment-method-panel.css");
 
 $bodyBackground:#EAEEF6;
 
@@ -20,4 +21,8 @@ body{
     display: flex;
     margin: 0 auto;
     width: 75%;
+}
+
+.hide{
+    display: none;
 }

@@ -1,5 +1,6 @@
 @import url("pp-container.css");
 @import url("profile-container.css");
+@import url("payment-method-panel.css");
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,10 @@ body {
   display: flex;
   margin: 0 auto;
   width: 75%;
+}
+
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=global.css.map */

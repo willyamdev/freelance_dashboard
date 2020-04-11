@@ -4,15 +4,60 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/global.css">
-        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+            rel="stylesheet">
         <title>Dashboard</title>
     </head>
     <body>
+        <div id="payment-panel" class="hide">
+            <div class="shadow"></div>
+            <div class="panel">
+                <div>
+                    <h2>Add Payment Method</h2>
+                </div>
+
+                <div>
+                    <p>Select a card</p>
+                    <select id="cards" placeholder="Card">
+                        <option value="mastercard">Mastercard</option>
+                        <option value="visa">Visa</option>
+                    </select>
+    
+                    <p>Holder name</p>
+                    <input type="text" id="holder-name" placeholder="ex Jeff Bezos">
+
+                    <div class="card-info-form">
+                        <div class="info-card">
+                            <p>Card number</p>
+                            <input type="text" id="card-number" placeholder="ex 2323 xxxx xxxx 9433">
+                        </div>
+                        <div class="info-card">
+                            <p>MM</p>
+                            <input type="text" id="mm" placeholder="ex 05">
+                        </div>
+                        <div class="info-card">
+                            <p>AA</p>
+                            <input type="text" id="aa" placeholder="ex 22">
+                        </div>
+                        <div class="info-card">
+                            <p>CVC</p>
+                            <input type="text" id="cvc" placeholder="ex 151">
+                        </div>
+                    </div>
+                    
+                    <button id="panel-add-method">Add method</button>
+                </div>
+
+            </div>
+        </div>
+
         <div id="content">
             <div class="pp-container">
                 <h2>Upgrade your plan</h2>
                 <p>
-                    Please make the payment to start enjoyind all features of our
+                    Please make the payment to start enjoyind all features of
+                    our
                     premium plan as soon as possible.
                 </p>
 
@@ -31,28 +76,11 @@
 
                 <div class="payment-details-container">
                     <h3>Payment details</h3>
-                    <div class="credit-card"> 
-                        <div>
-                            <img src="images/credit-cards-icon/mastercard.png">
-                        </div>
-                        <div>
-                            <h4>Credit card</h4>
-                            <h5>2344 xxxx xxxx 8880</h5>
-                        </div>
-                    </div>
-                    <div class="credit-card"> 
-                        <div>
-                            <img src="images/credit-cards-icon/visa.png">
-                        </div>
-                        <div>
-                            <h4>Credit card</h4>
-                            <h5>8890 xxxx xxxx 1234</h5>
-                        </div>
-                    </div>
-                    <button>ADD PAYMENT METHOD</button>
+                    <p>You don't have payment methods, add one!</p>
+                    <button id="add-payment">ADD PAYMENT METHOD</button>
                 </div>
 
-                <input type="text" placeholder="Email address"/>
+                <input type="text" placeholder="Email address" />
                 <button>Proceed to payment</button>
             </div>
             <div class="profile-container">
@@ -84,11 +112,33 @@
                 <div class="profile-pricing">
                     <h3>Set up your pricing</h3>
                     <p>
-                        Please set up your hourly or fixed rate so that the client is aware 
+                        Please set up your hourly or fixed rate so that the
+                        client is aware
                         of your pricing.
                     </p>
+                    <div>
+                        <div class="selected-pricing">
+                            <img src="images/pricing/hourly.png">
+                            <h4>Hourly</h4>
+                        </div>
+                        <div>
+                            <img src="images/pricing/fixed.png">
+                            <h4>Fixed</h4>
+                        </div>
+                    </div>
+
+                    <h2 id="hourly-price">$0 /hour</h2>
+
+                    <input type="range" id="price-range" />
+                    <div class="range-values">
+                        <h3>$20</h3>
+                        <h3>$300</h3>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <script src="js/price-range.js"></script>
+        <script src="js/payment-method.js"></script>
     </body>
 </html>
