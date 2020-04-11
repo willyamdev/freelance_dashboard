@@ -1,6 +1,7 @@
 @import url("pp-container.css");
 @import url("profile-container.css");
 @import url("payment-method-panel.css");
+@import url("responsiveness/global-responsiveness.css");
 * {
   margin: 0;
   padding: 0;
@@ -8,16 +9,17 @@
   font-family: "Varela Round", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #EAEEF6;
 }
 
 #content {
-  padding: 25px;
-  height: 100vh;
   display: flex;
   margin: 0 auto;
-  width: 75%;
 }
 
 .hide {

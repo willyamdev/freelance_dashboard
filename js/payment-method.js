@@ -15,11 +15,15 @@ let cvc = document.querySelector("#cvc");
 let addMethodButton = document.querySelector("#panel-add-method");
 
 addPaymentMethodButton.addEventListener("click", (e) => {
+    document.body.style.overflow = "hidden";
+    window.scrollTo(0,0);
     paymentPanel.classList.toggle("hide");
 });
 
 shadowPanel.addEventListener("click", (e) => {
     paymentPanel.classList.toggle("hide");
+    document.body.style.overflow = "auto";
+    clearForms();
 });
 
 addMethodButton.addEventListener("click", (e) => {
@@ -56,14 +60,25 @@ function addNewCard() {
 
     creditCardDiv.appendChild(firstDiv);
     creditCardDiv.appendChild(secondDiv);
-    // paymentMethodsContainer.appendChild(creditCardDiv);
-    paymentMethodsContainer.insertBefore(creditCardDiv, paymentMethodsContainer.children[2]);
-
-    if(paymentMethods == 0){
+    
+    if (paymentMethods == 0) {
+        paymentMethodsContainer.insertBefore(creditCardDiv, paymentMethodsContainer.children[2]);
         paymentMethodsContainer.removeChild(paymentMethodsContainer.children[1]);
+    }else{
+        paymentMethodsContainer.insertBefore(creditCardDiv, paymentMethodsContainer.children[1]);
     }
-
+    
     paymentMethods++;
+    clearForms();
+}
+
+function clearForms() {
+    selectedCard.value = "mastercard";
+    holderName.value = "";
+    cardNumber.value = "";
+    mm.value = "";
+    aa.value = "";
+    cvc.value = "";
 }
 
 function getCardIcon(cardSelected) {

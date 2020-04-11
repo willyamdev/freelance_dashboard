@@ -1,3 +1,5 @@
+@import url("responsiveness/payment-method-panel-responsiveness.css");
+
 $blueColor:rgb(6, 29, 255);
 
 #payment-panel {
@@ -11,10 +13,13 @@ $blueColor:rgb(6, 29, 255);
     }
 
     .panel {
+        opacity: 0;
+        animation-name: openPanel;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+
         position: absolute;
         background-color: white;
-        width: 60%;
-        height: 80%;
         z-index: 10;
         margin: auto;
         left: 0;
@@ -43,14 +48,9 @@ $blueColor:rgb(6, 29, 255);
                 width: 50%;
                 height: 50px;
                 background-color: $blueColor;
-                margin: auto;
                 color: white;
                 border: none;
                 cursor: pointer;
-                position: absolute;
-                bottom: 25px;
-                left: 0;
-                right: 0;
             }
 
             .card-info-form {
@@ -64,17 +64,16 @@ $blueColor:rgb(6, 29, 255);
                 width: 50px;
             }
 
-            .card-info-form div:nth-child(2),
-            .card-info-form div:nth-child(3),
-            .card-info-form div:nth-child(4) {
-                margin-left: 15px;
-            }
+            // .card-info-form div:nth-child(2),
+            // .card-info-form div:nth-child(3),
+            // .card-info-form div:nth-child(4) {
+            //     margin-left: 15px;
+            // }
 
             .info-card {
                 display: block;
                 width: auto;
                 padding: 0;
-                margin: 0;
                 background: none;
 
                 p {
@@ -111,5 +110,17 @@ $blueColor:rgb(6, 29, 255);
             outline: none;
             border-bottom: 2px solid $blueColor;
         }
+    }
+}
+
+@keyframes openPanel{
+    0%{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
     }
 }

@@ -1,13 +1,11 @@
+@import url("responsiveness/pp-container-responsiveness.css");
+
 $blueColor:rgb(6, 29, 255);
 
 .pp-container {
     flex-basis: 65%;
     background-color: white;
-    border-radius: 20px;
     padding: 20px;
-    -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
     height: min-content;
 
     p {

@@ -1,0 +1,135 @@
+/* Extra small devices */
+@media (min-width: 200px) and (max-width: 575px) {
+    .panel {
+        width: 95%;
+        height: 95%;
+
+        div:nth-child(2) {
+
+            .card-info-form {
+                flex-direction: column;
+            }
+
+            .card-info-form div:nth-child(2),
+            .card-info-form div:nth-child(3),
+            .card-info-form div:nth-child(4) {
+                margin-top: 15px;
+            }
+
+            button {
+                position: relative;
+                margin: 0 auto;
+                margin-top: 25px;
+            }
+        }
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .panel {
+        width: 90%;
+        height: 80%;
+
+        div:nth-child(2) {
+
+            .card-info-form div:nth-child(2),
+            .card-info-form div:nth-child(3),
+            .card-info-form div:nth-child(4) {
+                margin-left: 15px;
+            }
+
+            button {
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+
+            }
+        }
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .panel {
+        width: 90%;
+        height: 80%;
+
+        div:nth-child(2) {
+
+            .card-info-form div:nth-child(2),
+            .card-info-form div:nth-child(3),
+            .card-info-form div:nth-child(4) {
+                margin-left: 15px;
+            }
+
+            button {
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+
+            }
+        }
+    }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .panel {
+        width: 60%;
+        height: 80%;
+
+        div:nth-child(2) {
+
+            .card-info-form div:nth-child(2),
+            .card-info-form div:nth-child(3),
+            .card-info-form div:nth-child(4) {
+                margin-left: 15px;
+            }
+
+            button {
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+
+            }
+        }
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .panel {
+        width: 60%;
+        height: 80%;
+
+        div:nth-child(2) {
+
+            .card-info-form div:nth-child(2),
+            .card-info-form div:nth-child(3),
+            .card-info-form div:nth-child(4) {
+                margin-left: 15px;
+            }
+
+            button {
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+
+    }
+
+}

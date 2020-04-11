@@ -1,3 +1,4 @@
+@import url("responsiveness/payment-method-panel-responsiveness.css");
 #payment-panel .shadow {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
@@ -6,10 +7,12 @@
   z-index: 9;
 }
 #payment-panel .panel {
+  opacity: 0;
+  animation-name: openPanel;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
   position: absolute;
   background-color: white;
-  width: 60%;
-  height: 80%;
   z-index: 10;
   margin: auto;
   left: 0;
@@ -36,14 +39,9 @@
   width: 50%;
   height: 50px;
   background-color: #061dff;
-  margin: auto;
   color: white;
   border: none;
   cursor: pointer;
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  right: 0;
 }
 #payment-panel .panel div:nth-child(2) .card-info-form {
   margin-top: 30px;
@@ -54,16 +52,10 @@
 #payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(4) input[type=text] {
   width: 50px;
 }
-#payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(2),
-#payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(3),
-#payment-panel .panel div:nth-child(2) .card-info-form div:nth-child(4) {
-  margin-left: 15px;
-}
 #payment-panel .panel div:nth-child(2) .info-card {
   display: block;
   width: auto;
   padding: 0;
-  margin: 0;
   background: none;
 }
 #payment-panel .panel div:nth-child(2) .info-card p {
@@ -92,6 +84,17 @@
 #payment-panel .panel input[type=text]:focus {
   outline: none;
   border-bottom: 2px solid #061dff;
+}
+
+@keyframes openPanel {
+  0% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=payment-method-panel.css.map */
