@@ -29,6 +29,7 @@ shadowPanel.addEventListener("click", (e) => {
 addMethodButton.addEventListener("click", (e) => {
     addNewCard();
     paymentPanel.classList.toggle("hide");
+    document.body.style.overflow = "auto";
 });
 
 function addNewCard() {
