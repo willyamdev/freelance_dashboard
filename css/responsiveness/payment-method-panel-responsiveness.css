@@ -2,7 +2,7 @@
 @media (min-width: 200px) and (max-width: 575px) {
   .panel {
     width: 95%;
-    height: 95%;
+    height: auto;
   }
   .panel div:nth-child(2) .card-info-form {
     flex-direction: column;

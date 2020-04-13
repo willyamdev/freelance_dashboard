@@ -33,6 +33,7 @@ addMethodButton.addEventListener("click", (e) => {
 });
 
 function addNewCard() {
+    if(cardNumber.value.length == 0) return;
 
     let creditCard = {
         selectedCard: selectedCard.value,
