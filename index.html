@@ -7,14 +7,19 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
             rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
         <title>Dashboard</title>
     </head>
     <body>
         <div id="payment-panel" class="hide">
             <div class="shadow"></div>
             <div class="panel">
-                <div>
+                <div class="panel-tab">
                     <h2>Add Payment Method</h2>
+                    <span class="material-icons" id="close-panel-button">
+                        close
+                    </span>
                 </div>
 
                 <div>
@@ -23,14 +28,16 @@
                         <option value="mastercard">Mastercard</option>
                         <option value="visa">Visa</option>
                     </select>
-    
+
                     <p>Holder name</p>
-                    <input type="text" id="holder-name" placeholder="ex Jeff Bezos">
+                    <input type="text" id="holder-name" placeholder="ex Jeff
+                        Bezos">
 
                     <div class="card-info-form">
                         <div class="info-card">
                             <p>Card number</p>
-                            <input type="text" id="card-number" placeholder="ex 2323 xxxx xxxx 9433">
+                            <input type="text" id="card-number" placeholder="ex
+                                2323 xxxx xxxx 9433">
                         </div>
                         <div class="info-card">
                             <p>MM</p>
@@ -45,7 +52,7 @@
                             <input type="text" id="cvc" placeholder="ex 151">
                         </div>
                     </div>
-                    
+
                     <button id="panel-add-method">Add method</button>
                 </div>
 

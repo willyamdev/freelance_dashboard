@@ -4,6 +4,7 @@ let paymentMethodsContainer = document.querySelector(".payment-details-container
 let addPaymentMethodButton = document.querySelector("#add-payment");
 let paymentPanel = document.querySelector("#payment-panel");
 let shadowPanel = document.querySelector(".shadow");
+let closePanelButton = document.querySelector("#close-panel-button");
 
 //form inputs
 let selectedCard = document.querySelector("#cards");
@@ -21,6 +22,12 @@ addPaymentMethodButton.addEventListener("click", (e) => {
 });
 
 shadowPanel.addEventListener("click", (e) => {
+    paymentPanel.classList.toggle("hide");
+    document.body.style.overflow = "auto";
+    clearForms();
+});
+
+closePanelButton.addEventListener("click", (e) => {
     paymentPanel.classList.toggle("hide");
     document.body.style.overflow = "auto";
     clearForms();

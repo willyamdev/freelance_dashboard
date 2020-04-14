@@ -29,13 +29,21 @@ $blueColor:rgb(6, 29, 255);
         border-radius: 10px;
         overflow: hidden;
 
-        div:nth-child(1) {
+        .panel-tab {
             display: flex;
+            align-items: center;
             background-color: $blueColor;
             width: 100%;
             padding: 20px;
 
             h2 {
+                flex: 1;
+                color: white;
+            }
+
+            span{
+                cursor: pointer;
+                font-size: 30px;
                 color: white;
             }
         }

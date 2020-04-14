@@ -22,13 +22,20 @@
   border-radius: 10px;
   overflow: hidden;
 }
-#payment-panel .panel div:nth-child(1) {
+#payment-panel .panel .panel-tab {
   display: flex;
+  align-items: center;
   background-color: #061dff;
   width: 100%;
   padding: 20px;
 }
-#payment-panel .panel div:nth-child(1) h2 {
+#payment-panel .panel .panel-tab h2 {
+  flex: 1;
+  color: white;
+}
+#payment-panel .panel .panel-tab span {
+  cursor: pointer;
+  font-size: 30px;
   color: white;
 }
 #payment-panel .panel div:nth-child(2) {
